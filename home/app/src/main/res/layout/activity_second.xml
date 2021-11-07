@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/black">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,27 +19,25 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ваше Имя"
-        android:textSize="17dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваше Имя"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Введите Имя"
-        android:textSize="20dp"
-        android:id="@+id/name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/getName"/>
     </LinearLayout>
 
     <LinearLayout
@@ -57,21 +54,18 @@
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
-        <EditText
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Введите Фамилию"
             android:textSize="20dp"
-            android:id="@+id/surname"/>
+            android:id="@+id/getSurName"/>
     </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="Далее"
         android:id="@+id/sendButton"
-        android:background="@color/black"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"/>
+        android:background="@drawable/back"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

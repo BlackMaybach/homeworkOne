@@ -6,23 +6,20 @@ import android.widget.ImageButton
 import android.widget.TextView
 
 class SecondActivity : AppCompatActivity() {
-    lateinit var getName: TextView
-    lateinit var getSurName: TextView
+    lateinit var getNameSurName: TextView
     lateinit var backToMain: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        getName = findViewById(R.id.getName)
-        getSurName = findViewById(R.id.getSurName)
+        getNameSurName = findViewById(R.id.getNameSurName)
         backToMain = findViewById(R.id.sendButton)
 
         val getNameVal = intent.getStringExtra("NAME")
         val getSurNameVal = intent.getStringExtra("SURNAME")
 
-        getName.text = getNameVal
-        getSurName.text = getSurNameVal
+        getNameSurName.text = "$getNameVal $getSurNameVal"
 
 
         backToMain.setOnClickListener {

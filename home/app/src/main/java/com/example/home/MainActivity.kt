@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
 
 
-            if (name1.isEmpty()) {
+            if (name1.trim().isEmpty()) {
                 Toast.makeText(this, "Введите имя!", Toast.LENGTH_LONG).show()
             }
-            else if (surname1.isEmpty()) {
+            else if (surname1.trim().isEmpty()) {
                 Toast.makeText(this, "Введите фамилию!", Toast.LENGTH_LONG).show()
             }
             else
